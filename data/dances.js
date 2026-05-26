@@ -1,6 +1,6 @@
-const DANCES = [
+var DANCES = [
   {
-    "name": "",
+    "name": "Argentine tango",
     "type": "Latin dance / Rhythm",
     "active": false,
     "lat": -34.6037,
@@ -23,7 +23,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Milonga",
     "type": "Latin dance / Rhythm",
     "active": false,
     "lat": -34.6037,
@@ -46,7 +46,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Jumpstyle",
     "type": "Street dance / Electronic dance",
     "active": false,
     "lat": 51.2194,
@@ -69,7 +69,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Drametse Ngacham",
     "type": "Ceremonial dance",
     "active": false,
     "lat": 27.241,
@@ -92,7 +92,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Bossa Nova",
     "type": "Latin dance / Rhythm",
     "active": false,
     "lat": -22.9068,
@@ -115,7 +115,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Capoeira",
     "type": "Afro-Brazilian",
     "active": false,
     "lat": -12.9714,
@@ -138,7 +138,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Forró",
     "type": "Latin dance / Rhythm",
     "active": false,
     "lat": -8.0539,
@@ -161,7 +161,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Lambada",
     "type": "Latin dance / Rhythm",
     "active": false,
     "lat": -16.4497,
@@ -184,7 +184,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Maculelê",
     "type": "Afro-Brazilian",
     "active": false,
     "lat": -12.9715,
@@ -207,7 +207,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Samba (ballroom dance)",
     "type": "Latin dance / Rhythm",
     "active": false,
     "lat": -22.9068,
@@ -230,7 +230,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Samba (Brazilian dance)",
     "type": "Latin dance / Rhythm",
     "active": false,
     "lat": -22.9069,
@@ -253,7 +253,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Samba de Gafieira",
     "type": "Latin dance / Rhythm",
     "active": false,
     "lat": -22.907,
@@ -276,7 +276,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Samba de roda",
     "type": "Latin dance / Rhythm",
     "active": false,
     "lat": -12.5461,
@@ -299,7 +299,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Samba enredo",
     "type": "Latin dance / Rhythm",
     "active": false,
     "lat": -22.9068,
@@ -322,7 +322,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Zouk",
     "type": "Latin dance / Rhythm",
     "active": false,
     "lat": -22.9071,
@@ -345,7 +345,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Pole dance",
     "type": "Other",
     "active": false,
     "lat": 49.2827,
@@ -368,7 +368,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Cumbia",
     "type": "Latin dance / Rhythm",
     "active": false,
     "lat": 10.391,
@@ -391,7 +391,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Cha Cha",
     "type": "Latin dance / Rhythm",
     "active": false,
     "lat": 23.1136,
@@ -414,7 +414,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Conga line",
     "type": "Novelty and fad dances",
     "active": false,
     "lat": 20.0169,
@@ -437,7 +437,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Mambo",
     "type": "Latin dance / Rhythm",
     "active": false,
     "lat": 23.1136,
@@ -460,7 +460,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Rueda",
     "type": "Latin dance / Rhythm",
     "active": false,
     "lat": 23.1136,
@@ -483,7 +483,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Rumba",
     "type": "Latin dance / Rhythm",
     "active": false,
     "lat": 23.1136,
@@ -506,7 +506,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Bachata",
     "type": "Latin dance / Rhythm",
     "active": false,
     "lat": 18.4861,
@@ -529,7 +529,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Baladi",
     "type": "Belly dance",
     "active": false,
     "lat": 30.0444,
@@ -552,7 +552,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Belly dance",
     "type": "Belly dance",
     "active": false,
     "lat": 30.0444,
@@ -575,7 +575,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Raqs Sharqi",
     "type": "Belly dance",
     "active": false,
     "lat": 30.0444,
@@ -598,7 +598,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Saidi",
     "type": "Belly dance",
     "active": false,
     "lat": 25.6872,
@@ -621,7 +621,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Baroque dance",
     "type": "Historical dance",
     "active": false,
     "lat": 48.8049,
@@ -644,7 +644,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Boogie-woogie",
     "type": "Swing dance",
     "active": false,
     "lat": 52.52,
@@ -667,7 +667,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Bharatanatyam",
     "type": "Ceremonial dance",
     "active": false,
     "lat": 10.787,
@@ -690,7 +690,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Odissi",
     "type": "Ceremonial dance",
     "active": false,
     "lat": 19.8135,
@@ -713,7 +713,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Ultapulta dance",
     "type": "Historical dance",
     "active": false,
     "lat": 19.076,
@@ -736,7 +736,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Rejang dance",
     "type": "Ceremonial dance",
     "active": false,
     "lat": -8.4501,
@@ -759,7 +759,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Sanghyang",
     "type": "Ceremonial dance",
     "active": false,
     "lat": -8.4501,
@@ -782,7 +782,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Kawleeya",
     "type": "Folk/Traditional",
     "active": false,
     "lat": 31.9922,
@@ -805,7 +805,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Ballet",
     "type": "Historical dance",
     "active": false,
     "lat": 44.8381,
@@ -828,7 +828,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Kagura",
     "type": "Ceremonial dance",
     "active": false,
     "lat": 32.7115,
@@ -851,7 +851,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "KPop",
     "type": "Other",
     "active": false,
     "lat": 37.5665,
@@ -874,7 +874,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Khaleeji",
     "type": "Belly dance",
     "active": false,
     "lat": 29.3759,
@@ -897,7 +897,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Dabkeh",
     "type": "Folk/Traditional",
     "active": false,
     "lat": 33.8938,
@@ -920,7 +920,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Quebradita",
     "type": "Latin dance / Rhythm",
     "active": false,
     "lat": 20.6767,
@@ -943,7 +943,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Zapateado",
     "type": "Latin dance / Rhythm",
     "active": false,
     "lat": 20.6767,
@@ -966,7 +966,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Haka",
     "type": "Ceremonial dance",
     "active": false,
     "lat": -37.787,
@@ -989,7 +989,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Reggaeton",
     "type": "Latin dance / Rhythm",
     "active": false,
     "lat": 18.4655,
@@ -1012,7 +1012,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Fire dance",
     "type": "Other",
     "active": false,
     "lat": -13.8333,
@@ -1035,7 +1035,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Flamenco",
     "type": "Other",
     "active": false,
     "lat": 37.3891,
@@ -1058,7 +1058,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Paso Doble",
     "type": "Latin dance / Rhythm",
     "active": false,
     "lat": 40.4168,
@@ -1081,7 +1081,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Sufi whirling",
     "type": "Ceremonial dance",
     "active": false,
     "lat": 37.8714,
@@ -1104,7 +1104,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Turkish belly dance",
     "type": "Belly dance",
     "active": false,
     "lat": 41.0082,
@@ -1127,7 +1127,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Jive",
     "type": "Latin dance / Rhythm",
     "active": false,
     "lat": 51.5074,
@@ -1150,7 +1150,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Regency dance",
     "type": "Historical dance",
     "active": false,
     "lat": 51.5074,
@@ -1173,7 +1173,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Electric boogaloo (Electric boogie)",
     "type": "Disco Soul dance",
     "active": false,
     "lat": 36.7378,
@@ -1196,7 +1196,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Acrobatic dance",
     "type": "Other",
     "active": false,
     "lat": 40.7128,
@@ -1219,7 +1219,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Animal dance",
     "type": "Novelty and fad dances",
     "active": false,
     "lat": 37.7749,
@@ -1242,7 +1242,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Balboa",
     "type": "Swing dance",
     "active": false,
     "lat": 33.6064,
@@ -1265,7 +1265,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Bird",
     "type": "Disco Soul dance",
     "active": false,
     "lat": 33.8303,
@@ -1288,7 +1288,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Black Bottom",
     "type": "Swing dance",
     "active": false,
     "lat": 29.9511,
@@ -1311,7 +1311,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Blues dance",
     "type": "Swing dance",
     "active": false,
     "lat": 41.8781,
@@ -1334,7 +1334,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Break dancing",
     "type": "Street dance / Electronic dance",
     "active": false,
     "lat": 40.8279,
@@ -1357,7 +1357,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Bump",
     "type": "Disco Soul dance",
     "active": false,
     "lat": 40.7128,
@@ -1380,7 +1380,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Bunny hop",
     "type": "Novelty and fad dances",
     "active": false,
     "lat": 37.7749,
@@ -1403,7 +1403,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Cat Daddy",
     "type": "Street dance / Electronic dance",
     "active": false,
     "lat": 33.9617,
@@ -1426,7 +1426,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Charleston",
     "type": "Swing dance",
     "active": false,
     "lat": 32.7765,
@@ -1449,7 +1449,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Contemporary dance",
     "type": "Other",
     "active": false,
     "lat": 40.7128,
@@ -1472,7 +1472,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Country dance",
     "type": "Social dance",
     "active": false,
     "lat": 36.1627,
@@ -1495,7 +1495,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Dougie",
     "type": "Street dance / Electronic dance",
     "active": false,
     "lat": 32.7767,
@@ -1518,7 +1518,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Duranguense",
     "type": "Latin dance / Rhythm",
     "active": false,
     "lat": 41.8781,
@@ -1541,7 +1541,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "East Coast Swing",
     "type": "Latin dance / Rhythm",
     "active": false,
     "lat": 40.7128,
@@ -1564,7 +1564,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Frug",
     "type": "Novelty and fad dances",
     "active": false,
     "lat": 40.7128,
@@ -1587,7 +1587,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Gangsta Walking",
     "type": "Street dance / Electronic dance",
     "active": false,
     "lat": 35.1495,
@@ -1610,7 +1610,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Go-go",
     "type": "Novelty and fad dances",
     "active": false,
     "lat": 34.0522,
@@ -1633,7 +1633,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Hip-hop dance",
     "type": "Street dance / Electronic dance",
     "active": false,
     "lat": 40.8279,
@@ -1656,7 +1656,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Hitch hike",
     "type": "Novelty and fad dances",
     "active": false,
     "lat": 42.3314,
@@ -1679,7 +1679,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "House dance",
     "type": "Street dance / Electronic dance",
     "active": false,
     "lat": 41.8781,
@@ -1702,7 +1702,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Hustle",
     "type": "Disco Soul dance",
     "active": false,
     "lat": 40.7128,
@@ -1725,7 +1725,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Jaywalk",
     "type": "Street dance / Electronic dance",
     "active": false,
     "lat": 34.0522,
@@ -1748,7 +1748,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Jazz",
     "type": "American",
     "active": false,
     "lat": 29.9626,
@@ -1771,7 +1771,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Jitterbug",
     "type": "Novelty and fad dances",
     "active": false,
     "lat": 40.7128,
@@ -1794,7 +1794,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Krumping",
     "type": "Street dance / Electronic dance",
     "active": false,
     "lat": 33.9892,
@@ -1817,7 +1817,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Lindy Hop",
     "type": "Swing dance",
     "active": false,
     "lat": 40.8116,
@@ -1840,7 +1840,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Litefeet",
     "type": "Street dance / Electronic dance",
     "active": false,
     "lat": 40.8116,
@@ -1863,7 +1863,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Locking",
     "type": "Street dance / Electronic dance",
     "active": false,
     "lat": 34.0522,
@@ -1886,7 +1886,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Lyrical dance",
     "type": "Other",
     "active": false,
     "lat": 40.7128,
@@ -1909,7 +1909,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Madison",
     "type": "Novelty and fad dances",
     "active": false,
     "lat": 39.9612,
@@ -1932,7 +1932,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Modern dance",
     "type": "Free and improvised dance",
     "active": false,
     "lat": 40.7128,
@@ -1955,7 +1955,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Monkey",
     "type": "Disco Soul dance",
     "active": false,
     "lat": 35.1495,
@@ -1978,7 +1978,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Moonwalk",
     "type": "American",
     "active": false,
     "lat": 40.8106,
@@ -2001,7 +2001,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Mule",
     "type": "Novelty and fad dances",
     "active": false,
     "lat": 40.7128,
@@ -2024,7 +2024,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Oriental fusion",
     "type": "Belly dance",
     "active": false,
     "lat": 37.7749,
@@ -2047,7 +2047,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Philly dog",
     "type": "Disco Soul dance",
     "active": false,
     "lat": 39.9526,
@@ -2070,7 +2070,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Pony",
     "type": "Novelty and fad dances",
     "active": false,
     "lat": 39.9526,
@@ -2093,7 +2093,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Popping",
     "type": "Street dance / Electronic dance",
     "active": false,
     "lat": 36.7378,
@@ -2116,7 +2116,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Robot dance",
     "type": "Street dance / Electronic dance",
     "active": false,
     "lat": 34.0522,
@@ -2139,7 +2139,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Rock and Roll",
     "type": "Swing dance",
     "active": false,
     "lat": 39.9526,
@@ -2162,7 +2162,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Salsa",
     "type": "Latin dance / Rhythm",
     "active": false,
     "lat": 40.7128,
@@ -2185,7 +2185,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Shimmy",
     "type": "Disco Soul dance",
     "active": false,
     "lat": 41.8781,
@@ -2208,7 +2208,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Spank",
     "type": "Disco Soul dance",
     "active": false,
     "lat": 34.0522,
@@ -2231,7 +2231,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "St. Louis Shag",
     "type": "Swing dance",
     "active": false,
     "lat": 38.627,
@@ -2254,7 +2254,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Stepping",
     "type": "American",
     "active": false,
     "lat": 38.9227,
@@ -2277,7 +2277,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "tap dancing",
     "type": "American",
     "active": false,
     "lat": 40.7144,
@@ -2300,7 +2300,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Tejano dance",
     "type": "Latin dance / Rhythm",
     "active": false,
     "lat": 29.4241,
@@ -2323,7 +2323,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "The moses boogie",
     "type": "Disco Soul dance",
     "active": false,
     "lat": 36.7378,
@@ -2346,7 +2346,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "The Shake",
     "type": "Novelty and fad dances",
     "active": false,
     "lat": 40.7128,
@@ -2369,7 +2369,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Tribal belly dance",
     "type": "Belly dance",
     "active": false,
     "lat": 37.7749,
@@ -2392,7 +2392,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Turkey trot",
     "type": "Novelty and fad dances",
     "active": false,
     "lat": 37.7749,
@@ -2415,7 +2415,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Tutting",
     "type": "Street dance / Electronic dance",
     "active": false,
     "lat": 34.0522,
@@ -2438,7 +2438,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Twist",
     "type": "Novelty and fad dances",
     "active": false,
     "lat": 39.9526,
@@ -2461,7 +2461,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Uprock",
     "type": "Street dance / Electronic dance",
     "active": false,
     "lat": 40.6782,
@@ -2484,7 +2484,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Vintage dance",
     "type": "Other",
     "active": false,
     "lat": 39.1031,
@@ -2507,7 +2507,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Vogue",
     "type": "Street dance / Electronic dance",
     "active": false,
     "lat": 40.8116,
@@ -2530,7 +2530,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Waacking",
     "type": "Disco Soul dance",
     "active": false,
     "lat": 34.0522,
@@ -2553,7 +2553,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Watergate",
     "type": "Disco Soul dance",
     "active": false,
     "lat": 40.7128,
@@ -2576,7 +2576,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Watusi",
     "type": "Novelty and fad dances",
     "active": false,
     "lat": 34.0522,
@@ -2599,7 +2599,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Interpretive dance",
     "type": "Free and improvised dance",
     "active": false,
     "lat": 40.7128,
@@ -2622,7 +2622,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Calypso",
     "type": "Other",
     "active": false,
     "lat": 10.6667,
@@ -2645,7 +2645,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Vira",
     "type": "Folk/Traditional",
     "active": false,
     "lat": 41.5454,
@@ -2668,7 +2668,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Yangge",
     "type": "Folk/Traditional",
     "active": false,
     "lat": 34.3416,
@@ -2691,7 +2691,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Chinese classical dance",
     "type": "Folk/Traditional",
     "active": false,
     "lat": 39.9042,
@@ -2714,7 +2714,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Kathak",
     "type": "Folk/Traditional",
     "active": false,
     "lat": 27.1767,
@@ -2737,7 +2737,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Nihon buyo",
     "type": "Historical dance",
     "active": false,
     "lat": 35.6895,
@@ -2760,7 +2760,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Bon Odori",
     "type": "Folk/Traditional",
     "active": false,
     "lat": 35.6762,
@@ -2783,7 +2783,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Khon",
     "type": "Ceremonial dance",
     "active": false,
     "lat": 13.7563,
@@ -2806,7 +2806,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Ram Wong",
     "type": "Folk/Traditional",
     "active": false,
     "lat": 13.7563,
@@ -2829,7 +2829,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Balinese dance",
     "type": "Folk/Traditional",
     "active": false,
     "lat": -8.3405,
@@ -2852,7 +2852,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Jaipongan",
     "type": "Folk/Traditional",
     "active": false,
     "lat": -6.1751,
@@ -2875,7 +2875,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Barynya",
     "type": "Folk/Traditional",
     "active": false,
     "lat": 55.7558,
@@ -2898,7 +2898,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Hopak",
     "type": "Folk/Traditional",
     "active": false,
     "lat": 50.4501,
@@ -2921,7 +2921,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Polonaise",
     "type": "Folk/Traditional",
     "active": false,
     "lat": 52.2297,
@@ -2944,7 +2944,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Mazurka",
     "type": "Folk/Traditional",
     "active": false,
     "lat": 52.2297,
@@ -2967,7 +2967,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Csárdás",
     "type": "Folk/Traditional",
     "active": false,
     "lat": 47.1625,
@@ -2990,7 +2990,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Horo",
     "type": "Folk/Traditional",
     "active": false,
     "lat": 42.7339,
@@ -3013,7 +3013,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Syrtos",
     "type": "Folk/Traditional",
     "active": false,
     "lat": 37.9838,
@@ -3036,7 +3036,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Hasapiko",
     "type": "Folk/Traditional",
     "active": false,
     "lat": 37.9838,
@@ -3059,7 +3059,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Zeybek",
     "type": "Folk/Traditional",
     "active": false,
     "lat": 39.9208,
@@ -3082,7 +3082,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Gnawa",
     "type": "Ceremonial dance",
     "active": false,
     "lat": 31.7917,
@@ -3105,7 +3105,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Eskista",
     "type": "Folk/Traditional",
     "active": false,
     "lat": 9.145,
@@ -3128,7 +3128,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Maasai jumping dance",
     "type": "Ceremonial dance",
     "active": false,
     "lat": -1.2864,
@@ -3151,7 +3151,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Jarabe Tapatio",
     "type": "Folk/Traditional",
     "active": false,
     "lat": 19.4326,
@@ -3174,7 +3174,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Marinera",
     "type": "Folk/Traditional",
     "active": false,
     "lat": -12.0464,
@@ -3197,7 +3197,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Chacarera",
     "type": "Folk/Traditional",
     "active": false,
     "lat": -31.4167,
@@ -3220,7 +3220,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Bush dance",
     "type": "Folk/Traditional",
     "active": false,
     "lat": -33.8688,
@@ -3243,7 +3243,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Indlamu (Zulu war dance)",
     "type": "Ceremonial dance",
     "active": false,
     "lat": -29.0,
@@ -3266,7 +3266,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Gumboot dance",
     "type": "Folk/Traditional",
     "active": false,
     "lat": -26.2041,
@@ -3289,7 +3289,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Lezginka",
     "type": "Folk/Traditional",
     "active": false,
     "lat": 41.3775,
@@ -3312,7 +3312,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Mongolian folk dance",
     "type": "Folk/Traditional",
     "active": false,
     "lat": 46.8625,
@@ -3335,7 +3335,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Bhangra",
     "type": "Folk/Traditional",
     "active": false,
     "lat": 31.5204,
@@ -3358,7 +3358,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Maruni",
     "type": "Folk/Traditional",
     "active": false,
     "lat": 28.3949,
@@ -3381,7 +3381,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Waltz",
     "type": "Folk/Traditional",
     "active": false,
     "lat": 47.8095,
@@ -3404,7 +3404,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Afghan national dance",
     "type": "Folk/Traditional",
     "active": false,
     "lat": 34.5553,
@@ -3427,7 +3427,7 @@ const DANCES = [
     "flourishUrl": ""
   },
   {
-    "name": "",
+    "name": "Candombe",
     "type": "Afro-Uruguayan dance",
     "active": false,
     "lat": -34.9011,
