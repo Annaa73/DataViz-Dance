@@ -25,7 +25,7 @@ Before running the project, make sure you have the following installed:
 
 2. **Open the project folder in VS Code**
 ```bash
-   cd YOUR-REPO-NAME
+   cd DataViz-Dance
    code .
 ```
 
@@ -35,33 +35,34 @@ Before running the project, make sure you have the following installed:
    - Select **"Open with Live Server"**
    - The visualization will open automatically in your browser
 
-> ⚠️ The globe relies on external 3D libraries and data files, so it must be served through Live Server — simply double-clicking the HTML file will not work correctly.
+> **Note:** The globe relies on external 3D libraries and data files, so it must be served through Live Server — simply double-clicking the HTML file will not work correctly.
 
 ---
 
 ## How to Use
 
-### 🔍 Search & Filter (left sidebar)
+### Search & Filter (left sidebar)
 - Use the **search bar** on the left to look up dance styles by name or origin
-- For example, typing `pol` will surface results like **Polonaise** and **Pole Dance**
+- For example, typing `pol` will surface results like **Pole Dance**, **Polonaise** and **Mazurka**
 - Use the **category filter buttons** below the search bar to narrow results by dance type
 
-### 🌐 Exploring the Globe
-- **Click and drag** to rotate the globe
+### Exploring the Globe
+- **Click and move** to rotate the globe
 - **Scroll** to zoom in and out
 - Each colored dot represents a dance style, positioned at its country of origin
 - **Click any dot** to open the detail panel for that dance
 
-### 📋 Dance Detail Panel (right sidebar)
+### Dance Detail Panel (right sidebar)
 Clicking a dot or a dance name in the list opens a side panel showing:
 - Country and era of origin
 - Cultural significance
 - Notable characteristics
 - Formation, tempo, difficulty, and age group
 - Instruments, notable practitioners, and health benefits
+- Initial descriptive visualizations
 - A link to the **main Tableau dashboard** with extended visualizations
 
-### ⏱️ Timeline Playback
+###  Timeline Playback
 - At the bottom of the page there is a **timeline bar** spanning from **1000 BC to 2013**
 - Press the **▶ Play button** to animate the timeline — dots will appear on the globe as you travel through history, showing when each dance style emerged
 - You can also **drag the slider** manually to jump to any point in time
@@ -71,7 +72,7 @@ Clicking a dot or a dance name in the list opens a side panel showing:
 ## Project Structure
 
 ```
-YOUR-REPO-NAME/
+DataViz-Dance/
 ├── dance-origins-globe.html   # Main application file
 ├── data/
 │   └── dances.js              # Dataset of 151 dance styles
@@ -99,3 +100,4 @@ The dataset covers **151 dance styles** from across the world, ranging from anci
 - [Three.js](https://threejs.org/) — 3D globe rendering
 - [Tableau Embedding API](https://help.tableau.com/current/api/embedding_api/en-us/index.html) — dashboard visualizations
 - Vanilla JavaScript, HTML & CSS
+- Tableau Public for creating visualizations
