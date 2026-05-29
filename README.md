@@ -1,6 +1,6 @@
 # Dance Origins of the World 🌍💃
 
-An interactive 3D globe visualization exploring the origins of 151 dance styles across history and cultures.
+An interactive 3D globe visualization exploring the origins of 141 dance styles across history and cultures.
 
 ---
 
@@ -75,7 +75,7 @@ Clicking a dot or a dance name in the list opens a side panel showing:
 DataViz-Dance/
 ├── dance-origins-globe.html   # Main application file
 ├── data/
-│   └── dances.js              # Dataset of 151 dance styles
+│   └── dances.js              # Dataset of 141 dance styles
 └── README.md
 ```
 ---
@@ -91,7 +91,7 @@ DataViz-Dance/
 
 ## Data
 
-The dataset covers **151 dance styles** from across the world, ranging from ancient ceremonial dances to modern street dance, spanning over 3000 years of human movement and culture.
+The dataset covers **141 dance styles** from across the world, ranging from ancient ceremonial dances to modern street dance, spanning over 3000 years of human movement and culture.
 
 ---
 

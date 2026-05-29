@@ -35,10 +35,11 @@ canvas{display:block}
 .dance-name{font-size:13px;color:#e5e0d5;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .dance-origin-label{font-size:10px;color:rgba(229,224,213,.38);margin-top:1px;font-family:"Courier New",monospace;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .inactive-badge{font-size:9px;color:rgba(229,224,213,.3);border:1px solid rgba(229,224,213,.15);border-radius:3px;padding:1px 4px;margin-left:4px;flex-shrink:0}
-#info-panel{position:absolute;right:0;top:0;bottom:0;width:340px;background:rgba(8,8,15,0.93);border-left:1px solid rgba(255,255,255,0.07);z-index:10;backdrop-filter:blur(14px);transform:translateX(100%);transition:transform .38s cubic-bezier(.16,1,.3,1);overflow-y:auto}
+#info-panel{position:absolute;right:0;top:0;bottom:0;width:410px;background:rgba(8,8,15,0.93);border-left:1px solid rgba(255,255,255,0.07);z-index:10;backdrop-filter:blur(14px);transform:translateX(100%);transition:transform .38s cubic-bezier(.16,1,.3,1);overflow-y:auto}
 #info-panel.visible{transform:translateX(0)}
 #info-panel::-webkit-scrollbar{width:3px}
 #info-panel::-webkit-scrollbar-thumb{background:rgba(255,255,255,.12)}
+#info-panel { overflow-x: hidden; }
 #info-close{position:absolute;top:16px;right:16px;background:none;border:1px solid rgba(255,255,255,.14);color:rgba(229,224,213,.55);width:26px;height:26px;border-radius:50%;cursor:pointer;font-size:13px;display:flex;align-items:center;justify-content:center;transition:all .2s;z-index:1}
 #info-close:hover{background:rgba(255,255,255,.09);color:#e5e0d5}
 #info-content{padding:30px 24px 24px}
@@ -52,9 +53,6 @@ canvas{display:block}
 .meta-cell{background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.07);border-radius:6px;padding:10px 12px}
 .meta-cell .lbl{font-size:9px;text-transform:uppercase;letter-spacing:.09em;color:rgba(229,224,213,.3);font-family:"Courier New",monospace;margin-bottom:3px}
 .meta-cell .val{font-size:12px;color:rgba(229,224,213,.8)}
-.flourish-btn{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:7px;padding:10px 14px;color:rgba(229,224,213,.7);font-size:12px;font-family:"Courier New",monospace;text-decoration:none;transition:all .2s;margin-bottom:8px}
-.flourish-btn:hover{background:rgba(255,255,255,.1);color:#e5e0d5;border-color:rgba(255,255,255,.25)}
-.flourish-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
 #tooltip{position:absolute;background:rgba(8,8,15,.92);border:1px solid rgba(255,255,255,.12);border-radius:6px;padding:7px 11px;pointer-events:none;opacity:0;transition:opacity .13s;z-index:20;white-space:nowrap}
 #tooltip.visible{opacity:1}
 #tooltip-name{font-size:12px;color:#e5e0d5}
@@ -117,6 +115,9 @@ canvas{display:block}
   font-size:10px;
   color:rgba(229,224,213,.35);
 }
+.tableau-btn{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:7px;padding:10px 14px;color:rgba(229,224,213,.7);font-size:12px;font-family:"Courier New",monospace;text-decoration:none;transition:all .2s;margin-bottom:8px}
+.tableau-btn:hover{background:rgba(255,255,255,.1);color:#e5e0d5;border-color:rgba(255,255,255,.25)}
+.tableau-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
 </style>
 
 <script type="module" 
@@ -130,10 +131,10 @@ canvas{display:block}
 <div id="sidebar">
   <div id="sidebar-header">
     <h1>Dance Origins<br>of the World</h1>
-    <p>151 dances · click a dot to explore</p>
+    <p>141 dances · click a dot to explore</p>
   </div>
   <div id="stats-row">
-    <div class="stat"><span id="stat-shown">151</span>shown</div>
+    <div class="stat"><span id="stat-shown">141</span>shown</div>
     <div class="stat"><span id="stat-countries">—</span>countries</div>
     <div class="stat"><span id="stat-types">15</span>types</div>
   </div>
@@ -178,19 +179,24 @@ canvas{display:block}
       <div class="info-block-title">Health Benefits</div>
       <div class="info-block-body" id="info-health"></div>
     </div>
-    <div id="flourish-section" style="margin-top:4px">
-      <div class="info-block-title" style="font-size:9px;text-transform:uppercase;letter-spacing:.1em;color:rgba(229,224,213,.35);font-family:'Courier New',monospace;margin-bottom:8px">Flourish Visualizations</div>
-      <div id="flourish-links"></div>
+    <div id="tableau-links-section" style="margin-top:4px">
+      <div class="info-block-title" style="font-size:9px;text-transform:uppercase;letter-spacing:.1em;color:rgba(229,224,213,.35);font-family:'Courier New',monospace;margin-bottom:8px">Tableau Visualizations</div>
+      <a class="tableau-btn" href="https://public.tableau.com/views/Project_check/Dashboard1?" target="_blank">
+        <div class="tableau-dot" style="background:#30d6dc"></div>
+        View Full Dashboard
+      </a>
     </div>
-    <div id="tableau-container" style="display:none; margin-top:16px;">
-      <tableau-viz id="tableauViz"
-        src="https://public.tableau.com/views/Project_check/Dashboard2?"
-        width="100%"
-        height="420px"
-        hide-tabs
-        hide-toolbar>
-      </tableau-viz>
-    </div> 
+    <div id="tableau-container" style="display:none; margin-top:16px; overflow:hidden; width:100%;">
+      <div style="transform-origin: top left; transform: scale(0.8); width: 133.33%;">
+        <tableau-viz id="tableauViz"
+          src="https://public.tableau.com/views/Globe_viz/Dashboard2?"
+          width="500px"
+          height="500px"
+          hide-tabs
+          hide-toolbar>
+        </tableau-viz>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -207,7 +213,7 @@ canvas{display:block}
   </div>
 </div>
 
-<script src="data/dances.js"></script>
+<script src="data/dancesData.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
 
@@ -230,7 +236,7 @@ const TYPE_COLORS = {
   "Free and improvised dance":       "#70c0a0",
 };
 
-// Apply colors at runtime — works even if dances.js has no color field
+// Apply colors at runtime — works even if dancesData.js has no color field
 DANCES.forEach(d => { d.color = TYPE_COLORS[d.type] || "#aaaaaa"; });
 
 const TYPES = [...new Set(DANCES.map(d => d.type))].sort();
@@ -504,22 +510,6 @@ async function selectDance(dance) {
   document.getElementById("info-practitioners").textContent = dance.practitioners || "—";
   document.getElementById("info-health").textContent = dance.health || "—";
 
-  // Flourish links — use dance.flourishUrl if set, else show placeholders
-  const fl = document.getElementById("flourish-links");
-  fl.innerHTML = "";
-  const links = dance.flourishUrl
-    ? [{ label: "View Visualization", url: dance.flourishUrl, color: dance.color }]
-    : [
-        { label: "Dance Styles by Country", url: "https://public.flourish.studio/story/3015714/", color: "#e07030" },
-        { label: "Tempo & Difficulty", url: "https://public.flourish.studio/story/3015714/", color: "#60b870" },
-        { label: "Timeline of Origins", url: "https://public.flourish.studio/story/3015714/", color: "#a870d8" },
-      ];
-  links.forEach(l => {
-    const a = document.createElement("a");
-    a.className = "flourish-btn"; a.href = l.url; a.target = "_blank";
-    a.innerHTML = `<div class="flourish-dot" style="background:${l.color}"></div>${l.label}`;
-    fl.appendChild(a);
-  });
 
   // Tableau dashboard
   const tableauViz = document.getElementById("tableauViz");
@@ -608,7 +598,7 @@ let tlInterval = null;
 // Parse era field to a number — handles "1880s", "c.1750", "1920" etc.
 function parseEra(era) {
   if (!era) return null;
-  const match = String(era).match(/\d{3,4}/);
+  const match = String(era).match(/-?\d{1,4}/);
   return match ? parseInt(match[0]) : null;
 }
 
@@ -655,11 +645,17 @@ document.getElementById("tl-play").addEventListener("click", () => {
         clearInterval(tlInterval);
         tlPlaying = false;
         document.getElementById("tl-play").textContent = "▶";
-      } else {
-        tlYear += 1;
+        applyTimelineFilter();
+        return;
       }
+
+      // Speed: fast before 1500, slower after
+      const speed = tlYear < 1500 ? 20 : 5;
+
+      tlYear += speed;
+      if (tlYear > maxYear) tlYear = maxYear;
       applyTimelineFilter();
-    }, 50);                 // advances 1 year every 50ms
+    }, 90);                 // advances 1 year every 50ms
   } else {
     clearInterval(tlInterval);
   }

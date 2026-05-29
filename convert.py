@@ -2,7 +2,7 @@ import openpyxl
 import json
 
 # Load your Excel file
-wb = openpyxl.load_workbook("data/dance_data.xlsx", read_only=True)
+wb = openpyxl.load_workbook("data/danceData.xlsx", read_only=True)
 ws = wb.active
 rows = list(ws.iter_rows(values_only=True))
 headers = rows[0]
@@ -47,7 +47,7 @@ for row in rows[1:]:
 # Write output
 output = "const DANCES = " + json.dumps(dances, indent=2, ensure_ascii=False) + ";\n"
 
-with open("data/dances.js", "w", encoding="utf-8") as f:
+with open("data/dancesData.js", "w", encoding="utf-8") as f:
     f.write(output)
 
-print(f"✓ Done — {len(dances)} dances written to data/dances.js")
+print(f"✓ Done — {len(dances)} dances written to data/dancesData.js")
