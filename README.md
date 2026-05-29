@@ -75,7 +75,7 @@ Clicking a dot or a dance name in the list opens a side panel showing:
 DataViz-Dance/
 ├── dance-origins-globe.html   # Main application file
 ├── data/
-│   └── dances.js              # Dataset of 141 dance styles
+│   └── dancesData.js              # Dataset of 141 dance styles
 └── README.md
 ```
 ---
